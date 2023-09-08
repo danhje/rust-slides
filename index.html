@@ -20,21 +20,20 @@
 </style>
 
 		<meta name="csrf-param" content="authenticity_token" />
-<meta name="csrf-token" content="Du1zZOPv7sLSfdfPb/jM9R8hybKoLRUmJe3BmoiUkUK/4brvCIxKkI4mRqA1h9O7UbawhIDmbev0zO4k7hPJZg==" />
+<meta name="csrf-token" content="9EKEvnxkWxMNIu7xEdGuzfAdoZQzlvDngU0sc7z7lWVFTk01lwf/QVF5f55LrrGDvorYohtdiCpQbAPN2nzNQQ==" />
 		<style id="user-css-output" type="text/css"></style>
 	</head>
 	<body class="reveal-viewport theme-font-montserrat theme-color-grey-blue"">
 		<div class="reveal">
 			<div class="slides">
 				<section data-id="a36aa6dda90170a6586cb31195894964"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 238px; height: auto;" data-block-id="a7925e0e822e02e1f952dedb810d9018"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text"><h1>Rust 101</h1></div></div></section><section data-id="6dbb00d3c13dadb8789ead41ebc12806"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 21px; height: auto;" data-block-id="7f26bc700ff731b09037e041c9e5958c"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;"><h1>Program</h1></div></div>
-<div class="sl-block" data-block-type="text" style="width: 803px; left: 80px; top: 153.624px; height: auto;" data-block-id="1060a1be0f6c21d7ba814487ce0814bb"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Subtitle" style="z-index: 11; text-align: left; font-size: 92%;">
+<div class="sl-block" data-block-type="text" style="width: 857px; left: 55px; top: 153.624px; height: auto;" data-block-id="1060a1be0f6c21d7ba814487ce0814bb"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Subtitle" style="z-index: 11; text-align: left; font-size: 92%;">
 <ul>
-	<li>Dag 1
+	<li>Day 1
 	<ul>
-		<li>Teaser: Tre geniale mangler i Rust</li>
-		<li>Demo: Installasjon og hello world</li>
-		<li>Grunnleggende Rust - presentasjon med kodeeksempler</li>
-		<li>Diskusjon: Hvor kan Statnett med fordel ta i bruk Rust?</li>
+		<li>Demo - Installation and live coding of an API</li>
+		<li>Basic Rust - Presentation with code examples</li>
+		<li>Discussion: Where can Statnett benefit from some Rust?</li>
 	</ul>
 	</li>
 </ul>
@@ -42,15 +41,15 @@
 <p> </p>
 
 <ul>
-	<li>Hjemmelekse</li>
+	<li>Homework</li>
 </ul>
 
 <p> </p>
 
 <ul>
-	<li>Dag 2
+	<li>Day 2
 	<ul>
-		<li>rust_chess_workshop</li>
+		<li><a href="https://github.com/isakbjugn/rust_chess_workshop" target="_blank">rust_chess_workshop</a></li>
 	</ul>
 	</li>
 </ul>
@@ -62,7 +61,7 @@
 <div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 21px; height: auto;" data-block-id="5e04c2cb0403d6aeb93b7aca8169ce45" data-name="text-0ade2e"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;"><h1>Live coding</h1></div></div></section><section data-id="0a35b384c8e4ee131447956d51eb8a21">
 
 <div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 21px; height: auto;" data-name="text-0ade2e" data-block-id="abc7ed7af21ec8e94a1f33c50501382c"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;"><h1>Installing Rust</h1></div></div>
-<div class="sl-block" data-block-type="code" data-name="code-54156c" data-block-id="4c0b8303e4e2fc96bfa4c6dbde9057a5" style="width: 800px; height: 220px; left: 80px; top: 240px;"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 11;"><pre class="bash" style="font-size: 20px; line-height: 24px;"><code data-line-numbers="" style="padding: 15px;"># Install Rust using rustup (on Unix)
+<div class="sl-block" data-block-type="code" data-name="code-54156c" data-block-id="4c0b8303e4e2fc96bfa4c6dbde9057a5" style="width: 800px; height: 220px; left: 80px; top: 240px;"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 11;"><pre class="bash" style="font-size: 18px; line-height: 22px;"><code data-line-numbers="" style="padding: 15px;"># Install Rust using rustup (on Unix)
 
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
@@ -72,7 +71,7 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 </code></pre></div></div></section><section data-id="feacea37b182f7598b0eb92751ff8939">
 
 <div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 21px; height: auto;" data-name="text-0ade2e" data-block-id="ea45b6b7a3d19c7020de7f1bc1ec02d5"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;"><h1>Printing</h1></div></div>
-<div class="sl-block" data-block-type="code" data-name="code-54156c" style="width: 800px; height: 220px; left: 80px; top: 240px;" data-block-id="1ff6c12803d4832fbd208970b35ea9a3"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 11;"><pre class="rust" style="font-size: 17px; line-height: 20px;"><code data-line-numbers="" style="padding: 15px;">// `println!` prints to the console
+<div class="sl-block" data-block-type="code" data-name="code-54156c" style="width: 800px; height: 220px; left: 80px; top: 240px;" data-block-id="1ff6c12803d4832fbd208970b35ea9a3"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 11;"><pre class="rust" style="font-size: 16px; line-height: 19px;"><code data-line-numbers="" style="padding: 15px;">// `println!` prints to the console
 // The ! indicates it is a macro (metaprogramming - code that writes code)
 
 println!("Hello, world!");</code></pre></div></div></section><section data-id="0cfb3306df5656788b0eec4390fcb037">
@@ -714,9 +713,337 @@ let colors = [
     Color {r: 241, g: 9, b: 98},
 ];
 
-for Color {r, g, b } in colors {
+for Color { r, g, b } in colors {
     println!("{r}-{g}-{b}");
-}</code></pre></div></div></section><section data-id="bf9c25d50bff6eac3c7226b2d2065fc0"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 136px; height: auto;" data-name="text-aa7377" data-block-id="5a59487b7653def285b1313383d73327"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 10;">
+}</code></pre></div></div></section><section data-id="71076d13330a85fe74b2ac96d9ac5f96">
+
+<div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 21px; height: auto;" data-name="text-0ade2e" data-block-id="f17a88bfe1d97956caeeb21eabddc905"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11; font-size: 85%;"><h1>Patterns</h1></div></div>
+
+<div class="sl-block" data-block-type="code" style="width: 800px; height: 380px; left: 80px; top: 180px;" data-name="code-be2a9c" data-block-id="95e65a282987ba45de258d6f6d906ac0"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 10;"><pre class="rust" style="font-size: 16px; line-height: 19px;"><code style="padding: 15px;" data-line-numbers="">// Refutability: Patterns come in two forms, refutable and irrefutable.
+
+// The pattern (x, y) is irrefutable, i.e. it will allways match:
+
+let point = (4, 3);
+let (x, y) = point;
+
+// The pattern Some(x) is refutable, i.e. it might not match:
+
+let maybe_a_number = Some(3);
+
+if let Some(n) = maybe_a_number {
+    println!("It's something");
+} else {
+    println!("There's nothing there");
+};</code></pre></div></div></section><section data-id="70605f70059fd37d063069121f6c4d32">
+
+<div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 21px; height: auto;" data-name="text-0ade2e" data-block-id="dbc5eebea9e9129dce30d621ea8113a6"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11; font-size: 58%;"><h1>Exhaustive pattern matching</h1></div></div>
+
+<div class="sl-block" data-block-type="code" style="width: 800px; height: 380px; left: 80px; top: 180px;" data-name="code-be2a9c" data-block-id="2df9b081794e3f55633474c5ef1e7e8d"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 10;"><pre class="rust" style="font-size: 17px; line-height: 20px;"><code style="padding: 15px;" data-line-numbers="">enum Color {
+    Red,
+    Green,
+    Blue,
+}
+
+let color = Color::Red;
+
+match color {
+    Color::Red =&gt; println!("Red"),
+    Color::Green =&gt; println!("Green"),
+}
+// error[E0004]: non-exhaustive patterns: `Color::Blue` not covered</code></pre></div></div></section><section data-id="5fd3656c22fa3c58f306463ea5ecc506">
+
+<div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 21px; height: auto;" data-name="text-0ade2e" data-block-id="25356ffc833509e0fe383dbebe47ae2a"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11; font-size: 58%;"><h1>Exhaustive pattern matching</h1></div></div>
+
+<div class="sl-block" data-block-type="code" style="width: 800px; height: 391px; left: 80px; top: 180px;" data-name="code-be2a9c" data-block-id="652c228bfd84ddc83b2af445a61a4ec4"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 10;"><pre class="rust" style="font-size: 19px; line-height: 23px;"><code style="padding: 15px;" data-line-numbers="">enum Color {
+    Red,
+    Green,
+    Blue,
+}
+
+let color = Color::Red;
+
+match color {
+    Color::Red =&gt; println!("Red"),
+    Color::Green =&gt; println!("Green"),
+    _ =&gt; println!("Some other color"),
+}</code></pre></div></div></section><section data-id="0a366eb05fc8e63eb221f1964145adc1">
+
+<div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 21px; height: auto;" data-name="text-0ade2e" data-block-id="cdccdf09ecf37977e82adb2a5a9e7b0a"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11; font-size: 58%;"><h1>Exhaustive pattern matching</h1></div></div>
+
+<div class="sl-block" data-block-type="code" style="width: 800px; height: 292px; left: 80px; top: 180px;" data-name="code-be2a9c" data-block-id="2762954c0c02a578b560f53bc5a654bf"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 10;"><pre class="rust" style="font-size: 18px; line-height: 22px;"><code style="padding: 15px;" data-line-numbers="">let num = 5;
+
+match num {
+    1 =&gt; println!("One"),
+    2 =&gt; println!("Two"),
+    3 =&gt; println!("Three"),
+}
+// error[E0004]: non-exhaustive patterns:
+// `i32::MIN..=0_i32` and `4_i32..=i32::MAX` not covered</code></pre></div></div></section><section data-id="08c319e97434ec3e8e37df263e4050d5">
+
+<div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 21px; height: auto;" data-name="text-0ade2e" data-block-id="24d738421c39615e5a7649bd7b37173d"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11; font-size: 85%;"><h1>Tail expressions</h1></div></div>
+
+<div class="sl-block" data-block-type="code" style="width: 800px; height: 380px; left: 80px; top: 180px;" data-name="code-be2a9c" data-block-id="f074426eae70ca9cb44fb9e8143a44bc"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 10;"><pre class="rust" style="font-size: 15px; line-height: 18px;"><code style="padding: 15px;" data-line-numbers="">fn function_one() -&gt; String {
+    do_other_stuff();
+    return "This string will be returned".to_string();
+}
+
+fn function_two() -&gt; String {
+    do_other_stuff();
+    "This will be returned, even though there is no return keyword".to_string()
+    // Tail expression
+}
+
+fn function_three() {
+    do_other_stuff();
+    "This will NOT be returned due to the trailing semicolon".to_string();
+}</code></pre></div></div></section><section data-id="e5eb9953c11ebf9f3614379236682fa4">
+
+<div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 21px; height: auto;" data-name="text-0ade2e" data-block-id="70cae0463b3298b935c761798e776171"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11; font-size: 85%;"><h1>Expressions</h1></div></div>
+
+<div class="sl-block" data-block-type="code" style="width: 800px; height: 380px; left: 80px; top: 180px;" data-name="code-be2a9c" data-block-id="36f577778457178a17a51b0d5450fd8a"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 10;"><pre class="rust" style="font-size: 17px; line-height: 20px;"><code style="padding: 15px;" data-line-numbers="">// In Rust, almost everything is an expression,
+// meaning it evaluates to a value.
+// For example, `if` is an expression, not a statement.
+
+let answer = if 1 + 1 == 2 {
+    do_stuff();
+    42
+} else {
+    do_other_stuff();
+    24
+};
+
+println!("The answer is {answer}") // Prints "The answer is 42"</code></pre></div></div></section><section data-id="f3cc269b3e7b01e04097c0f5d021d3f3">
+
+<div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 21px; height: auto;" data-name="text-0ade2e" data-block-id="586fa494fab1032bf6d7695be4b5e6d6"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11; font-size: 85%;"><h1>Expressions</h1></div></div>
+
+<div class="sl-block" data-block-type="code" style="width: 800px; height: 485px; left: 80px; top: 151px;" data-name="code-be2a9c" data-block-id="101fffa6df6bb6bd560589367d5ed3f0"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 10;"><pre class="rust" style="font-size: 17px; line-height: 20px;"><code style="padding: 15px;" data-line-numbers="">let answer = if 1 + 1 == 2 {
+    match 1 + 1 {
+        2 =&gt; {
+            {
+                {
+                    {
+                        42
+                    }
+                }
+            }
+        }
+        _ =&gt; 24
+    }
+}
+else {
+    24
+};
+
+println!("The answer is {answer}")  // Prints "The answer is 42"</code></pre></div></div></section><section data-id="f453011d7e2c77e26c12d256722bf6ca">
+
+<div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 21px; height: auto;" data-name="text-0ade2e" data-block-id="7ac9976968ce51d5c10355ce330c43d5"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11; font-size: 85%;"><h1>Expressions</h1></div></div>
+
+<div class="sl-block" data-block-type="code" style="width: 891px; height: 486px; left: 34.5px; top: 152px;" data-name="code-be2a9c" data-block-id="bb422f1fae7a751fd0788c4d433b0c44"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 10;"><pre class="rust" style="font-size: 11px; line-height: 13px;"><code style="padding: 15px;" data-line-numbers="">let x: u8 = 2;
+let y: u8 = 3;
+let rival_team: &amp;HashSet&lt;(u8, u8)&gt; = &amp;HashSet::new();
+
+// Everything is an expression, including block.
+// How can this be used? Might help to communicate intent. Compare these two, wo are doing the exact same thing:
+
+// As we are reading the first line below, the intent isn't necessarily immediately clear:
+let mut moves = HashSet::from([(x + 1, y + 1)]);
+if let Some(new_x) = x.checked_sub(1) {
+    moves.insert((new_x, y + 1));
+}
+let capture_moves = moves
+    .intersection(rival_team)
+    .cloned()
+    .collect::&lt;HashSet&lt;_&gt;&gt;();
+
+// But here, we immediately understand that all the code in the block is involved in computing capture_moves:
+let capture_moves = {
+    let mut moves = HashSet::from([(x + 1, y + 1)]);
+    if let Some(new_x) = x.checked_sub(1) {
+        moves.insert((new_x, y + 1));
+    }
+    moves
+        .intersection(rival_team)
+        .cloned()
+        .collect::&lt;HashSet&lt;_&gt;&gt;()
+};
+
+// An additional advantage of the latter is that the temporary variable `moves` is contained in the scope
+// (it's cleared after the block has finished)</code></pre></div></div></section><section data-id="5b2318d8fde07a2279b6d8dba356adc3">
+
+<div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 21px; height: auto;" data-name="text-0ade2e" data-block-id="25b9c1cb97d26d0dcb645f788da7aa22"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11; font-size: 85%;"><h1>impl</h1></div></div>
+
+<div class="sl-block" data-block-type="code" style="width: 640px; height: 456px; left: 160px; top: 152px;" data-name="code-be2a9c" data-block-id="de49a6f041d1dd82be42f5da0d520b5e"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 10;"><pre class="rust" style="font-size: 20px; line-height: 24px;"><code style="padding: 15px;" data-line-numbers="">struct Dog {
+    name: String,
+}
+
+impl Dog {
+    fn bark(&amp;self) {
+        println!("{} barks", self.name);
+    }
+}
+
+let fido = Dog { name: "Fido".to_string() };
+
+fido.bark();</code></pre></div></div></section><section data-id="a95f8d94ba037d0b048305f595e6d639">
+
+<div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 21px; height: auto;" data-name="text-0ade2e" data-block-id="bdd4fee810840267d17c0ccf22af95d6"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 12; font-size: 85%;"><h1>Traits</h1></div></div>
+
+<div class="sl-block" data-block-type="code" style="width: 640px; height: 529px; left: 160px; top: 134px;" data-name="code-be2a9c" data-block-id="63e39a555171def656d0dcefdb1c2d37"><div class="sl-block-content notranslate fragment" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 11;" data-fragment-index="0"><pre class="rust" style="font-size: 16px; line-height: 19px;"><code style="padding: 15px;" data-line-numbers="">trait Animal {
+    fn speak(&amp;self);
+}
+
+struct Dog;
+struct Cat;
+struct Fox;
+
+impl Animal for Dog {
+    fn speak(&amp;self) {
+        println!("Woof!");
+    }
+}
+
+impl Animal for Cat {
+    fn speak(&amp;self) {
+        println!("Meow!");
+    }
+}
+
+impl Animal for Fox {
+    fn speak(&amp;self) {
+        println!("Ring-ding-ding-ding-dingeringeding!");
+    }
+}</code></pre></div></div>
+<div class="sl-block" data-block-type="code" style="width: 640px; height: 529px; left: 160px; top: 134px;" data-block-id="a1626126ce0618123c9aa8a8a5ab7542" data-name="code-74c239"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 10;"><pre class="rust" style="font-size: 16px; line-height: 19px;"><code style="padding: 15px;" data-line-numbers="">trait Animal {
+    fn speak(&amp;self);
+}
+
+struct Dog;
+struct Cat;
+struct Fox;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</code></pre></div></div></section><section data-id="8de62cde929c884b84397e91ca9e7c64">
+
+<div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 21px; height: auto;" data-name="text-0ade2e" data-block-id="6e38e36ba45e63213ac1942450a32562"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 12; font-size: 85%;"><h1>Traits</h1></div></div>
+
+<div class="sl-block" data-block-type="code" style="width: 800px; height: 276px; left: 80px; top: 257px;" data-name="code-74c239" data-block-id="374bf4bc7bc4b17692ae82555516a3af"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 10;"><pre class="rust" style="font-size: 16px; line-height: 19px;"><code style="padding: 15px;" data-line-numbers="">fn make_animal_speak(animal: &amp;impl Animal) {
+    // This function accepts any type that implements the Animal trait.
+    animal.speak();
+}
+
+let dog = Dog;
+make_animal_speak(&amp;dog);</code></pre></div></div></section><section data-id="e9cef09ce11e2d2cc9e1e63fde81064e">
+
+<div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 21px; height: auto;" data-name="text-0ade2e" data-block-id="23c6bafd7b349894dd5b5317a767fd53"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11; font-size: 85%;"><h1>Associated functions</h1></div></div>
+
+<div class="sl-block" data-block-type="code" style="width: 800px; height: 336px; left: 80px; top: 241px;" data-name="code-74c239" data-block-id="3245a864cc9d134680460544fe8e6c86"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 10;"><pre class="rust" style="font-size: 16px; line-height: 19px;"><code style="padding: 15px;" data-line-numbers="">struct Dog;
+
+impl Dog {
+    fn speak() {
+        // Note that `speak` doesn't have a &amp;self parameter,
+        // meaning it becomes an "associated function" (think static method)
+        println!("Woof!");
+    }
+}
+
+// Dog.speak();  // error[E0599]: no method named `speak` found for struct
+Dog::speak(); // :: is used when accessing associated functions</code></pre></div></div></section><section data-id="642d7a21d1ace44334117913832f28ed">
+
+<div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 21px; height: auto;" data-name="text-0ade2e" data-block-id="12ab8aa8b2b02b8a54eceb035346933e"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11; font-size: 85%;"><h1>Modules</h1></div></div>
+
+<div class="sl-block" data-block-type="code" style="width: 774px; height: 313px; left: 93px; top: 210px;" data-name="code-74c239" data-block-id="7de62c7f20619229b5803d85347c0a2c"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 10;"><pre class="rust" style="font-size: 16px; line-height: 19px;"><code style="padding: 15px;" data-line-numbers="">// Separate files are also modules, and can be
+// braught in with the `mod` keyword, but 
+// only from main.rs or lib.rs
+
+mod separate_file_module;  // This only works from main.rs or lib.rs
+
+separate_file_module::do_something();</code></pre></div></div></section><section data-id="7ad06b7fa1f5ed5620bd5eabda14c889">
+
+<div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 21px; height: auto;" data-name="text-0ade2e" data-block-id="369ddde6846df5136e946abb66b4fadd"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11; font-size: 85%;"><h1>Modules</h1></div></div>
+
+<div class="sl-block" data-block-type="code" style="width: 774px; height: 313px; left: 93px; top: 210px;" data-name="code-74c239" data-block-id="0b8f5162a8b73e581b97229083c1f3cc"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 10;"><pre class="rust" style="font-size: 16px; line-height: 19px;"><code style="padding: 15px;" data-line-numbers="">// From files other than main.rs or lib.rs,
+// use `use` instead of `mod`
+
+use crate::separate_file_module;
+
+separate_file_module::do_something();</code></pre></div></div></section><section data-id="22cdbe0884ed7176fac722f64c23df61">
+
+<div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 21px; height: auto;" data-name="text-0ade2e" data-block-id="173822bccb96dead945724cf8c7993f4"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11; font-size: 85%;"><h1>Modules</h1></div></div>
+
+<div class="sl-block" data-block-type="code" style="width: 774px; height: 313px; left: 93px; top: 210px;" data-name="code-74c239" data-block-id="b16de1944b404061df9c2e589d606bf2"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 10;"><pre class="rust" style="font-size: 16px; line-height: 19px;"><code style="padding: 15px;" data-line-numbers="">// Modules can also be defined inline.
+// Tests are a good use case for this.
+
+mod inline_module {
+    pub fn do_something() {               // Note the `pub`
+        println!("Doing something");
+    }
+}
+
+inline_module::do_something();</code></pre></div></div></section><section data-id="e861ef4e3ccd4838634fc1b044cf01e9">
+
+<div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 21px; height: auto;" data-name="text-0ade2e" data-block-id="26141055c64217d496766cd9f2f2d58d"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; font-size: 85%;"><h1>Tips</h1></div></div>
+
+<div class="sl-block" data-block-type="text" data-name="text-b80cc7" data-block-id="92ad1f5f6e48764360af3f4f28709a8d" style="height: auto; width: 800px; left: 80px; top: 140px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; text-align: left;"><ul>
+	<li>Start by modeling the problem domain. Do it in such a way that invalid states are unrepresentable</li>
+	<li>Prefer match over if</li>
+	<li>Compileren er din venn. Les feilmeldingen på nytt. Og på nytt</li>
+</ul></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-2ac157" data-block-id="d2dd5bacb1d2f7b000a93816fedc833c" style="width: 371px; height: 371px; left: 491px; top: 322px;"><div class="sl-block-content fragment" style="z-index: 12;" data-fragment-index="0"><img class="" data-natural-width="640" data-natural-height="640" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/1804764/images/10733609/pasted-from-clipboard.png"></div></div></section><section data-id="ed01b7cd90601bfa8fcc289e9a5d18e5">
+
+<div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 21px; height: auto;" data-name="text-0ade2e" data-block-id="426aac78b9e78d3d16ae2246306bfda7"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; font-size: 85%;"><h1>Hva er Rust egnet for?</h1></div></div>
+
+<div class="sl-block" data-block-type="text" data-name="text-b80cc7" style="height: auto; width: 800px; left: 80px; top: 174px;" data-block-id="79aa514387a6fa2a20bc67311e81928f"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; text-align: left; font-size: 72%;"><ul>
+	<li class="fragment" data-fragment-index="0">Ofte omtalt som et systemprogrammeringsspråk, kanskje fordi det er få språk som er egnet der. Eller fordi det var det det ble markedsført som i starten. Men det har blitt et "general purpose" språk som egner seg til både høynivå og lavnivå programmering</li>
+	<li class="fragment" data-fragment-index="1">Modent og production-ready (det er flere Rust-prosjekter på GitHub enn Scala, Kotlin, Swift og Perl</li>
+	<li class="fragment" data-fragment-index="2">Kan f.eks. fint brukes til web (<a href="https://www.arewewebyet.org/" target="_blank">https://www.arewewebyet.org/</a>)</li>
+	<li class="fragment" data-fragment-index="3">Rust er egnet der hvor:
+	<ul>
+		<li>Ytelse ELLER pålitelighet / korrekthet er viktig</li>
+		<li>Store / komplekse kodebaser, der Rusts feilhåndtering som en del av typesystemet kan gjøre at man lettere oppdager utfordringer som oppstår pga. faktorisering</li>
+		<li>Der man ønsker "fearless concurrency"</li>
+	</ul>
+	</li>
+	<li class="fragment" data-fragment-index="4">Oppfordring: Test det ut. Være med å videreutvikle rust-build og annen "scaffolding"</li>
+</ul></div></div></section><section data-id="7b9a6f0d33c804ff2e7b09e5f6632b40">
+
+<div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 21px; height: auto;" data-name="text-0ade2e" data-block-id="8c54f1228d2aff96a0f4cc5662b49fb6"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; font-size: 85%;"><h1>Links</h1></div></div>
+
+<div class="sl-block" data-block-type="text" data-name="text-0ba68b" data-block-id="0b6b22fd5beb2f48075a552dcb1b3967" style="height: auto; width: 800px; left: 80px; top: 270px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; font-size: 118%;"><ul>
+	<li><a href="https://doc.rust-lang.org/book/" target="_blank">"The book"</a></li>
+	<li><a href="https://doc.rust-lang.org/rust-by-example/" target="_blank">Rust By Example</a></li>
+	<li><a href="https://play.rust-lang.org/" target="_blank">Rust Playground</a></li>
+</ul></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-a7ecce" data-block-id="f484f6c80785992b1d46854bd598eef5" style="height: auto; width: 600px; left: 180px; top: 573px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; font-size: 51%;">
+<p>These slides are available at </p>
+
+<p><a href="https://rust.danielhjerholm.me" target="_blank">rust.danielhjerholm.me</a></p>
+</div></div></section><section data-id="b8f60e50c1e9fbfd6d2568fad8fe2f41">
+
+<div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 21px; height: auto;" data-name="text-0ade2e" data-block-id="cb8a648413fe2f8bc75a06749fbd885e"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; font-size: 85%;"><h1>Homework</h1></div></div>
+
+<div class="sl-block" data-block-type="text" data-name="text-a7afbb" data-block-id="a3faf9a0cecc255a454dfd265f82bc24" style="height: auto; width: 703px; left: 128.5px; top: 315.25px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; text-align: left;"><p>2. Install Rust, create and run "hello, world"</p></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 703px; left: 128.5px; top: 222.5px;" data-block-id="6966c8ea3cd50e01496e4eb9f27e6c17" data-name="text-1b20a5"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; text-align: left;"><p>1. Watch video: <a href="https://www.youtube.com/watch?v=bu_gulee89Q" target="_blank">How To Speak Rust</a></p></div></div>
+<div class="sl-block" data-block-type="code" data-name="code-c99803" data-block-id="d5a337d1299a60417ddfa3ce07c122ab" style="width: 720px; height: 156px; left: 160px; top: 368.75px;"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 13;"><pre class="bash" style="font-size: 16px; line-height: 19px;"><code data-line-numbers="">curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+cd ~/.projects
+cargo new rust-hello-world --bin
+cd rust-hello-world/
+cargo run</code></pre></div></div></section><section data-id="bf9c25d50bff6eac3c7226b2d2065fc0"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 136px; height: auto;" data-name="text-aa7377" data-block-id="5a59487b7653def285b1313383d73327"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 10;">
 <h2>Slutt</h2>
 </div></div>
 
@@ -733,7 +1060,7 @@ for Color {r, g, b } in colors {
 
 		
 <script>
-	var SLConfig = {"current_user":{"id":1804764,"username":"danhje","name":null,"description":null,"thumbnail_url":"https://www.gravatar.com/avatar/7fd3ed22b55f95c7b68e8522de632951?s=140\u0026d=https%3A%2F%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","account_type":"default","team_id":null,"settings":{"id":11192306,"present_controls":true,"present_upsizing":true,"present_pointer":true,"present_notes":true,"default_deck_tag_id":null,"editor_grid":true,"editor_grid_on_top":false,"editor_snap":true,"editor_fixed_notes":false,"developer_mode":false,"speaker_layout":"default","speaker_theme":"dark","phone_number":null,"phone_country_code":null,"media_sources":null,"export_controls":null,"export_slide_number":null,"export_slide_notes":null,"export_separate_fragments":null,"auto_animate_tutorial_completed":true,"profile_sorting":"created","profile_layout":"grid"},"email":"daniel.hjertholm@icloud.com","notify_on_receipt":true,"billing_address":null,"billing_vat_id":null,"editor_tutorial_completed":true,"manually_upgraded":false,"deck_user_editor_limit":null,"storage_used":939787,"storage_limit":262144000,"image_upload_limit":10485760,"video_upload_limit":104857600},"deck":{"id":2682410,"slug":"testing","title":"Rust","description":"","width":960,"height":700,"margin":0.05,"visibility":"all","published_at":"2023-09-06T15:37:35.294Z","sanitize_messages":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/0a4969eaef457f25ceceaeea6b4160ef/thumb.jpg?1694086256","view_count":0,"user":{"id":1804764,"username":"danhje","name":null,"description":null,"thumbnail_url":"https://www.gravatar.com/avatar/7fd3ed22b55f95c7b68e8522de632951?s=140\u0026d=https%3A%2F%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","account_type":"default","team_id":null,"settings":{"id":11192306,"present_controls":true,"present_upsizing":true,"present_pointer":true,"present_notes":true,"default_deck_tag_id":null}},"background_transition":"slide","transition":"slide","theme_id":null,"theme_font":"montserrat","theme_color":"grey-blue","auto_slide_interval":0,"comments_enabled":true,"forking_enabled":true,"rolling_links":false,"center":false,"shuffle":false,"should_loop":false,"share_notes":false,"slide_number":true,"slide_count":56,"rtl":false,"version":2,"collaborative":false,"deck_user_editor_limit":null,"data_updated_at":1694105575748,"font_typekit":null,"font_google":null,"time_limit":null,"navigation_mode":"default","upsizing_enabled":true,"language":"en","notes":{"79ddfde084498970c6208d01375e09b9":"Mindre kontroll over event loop. Ikke brukbart for komplekse situasjoner. F.eks. task queue i en crawler.\n\n","6dbb00d3c13dadb8789ead41ebc12806":"God blanding av norsk og engelsk\n\nTestdekning\n\nVerdikjedetesting - prosessflyt oppstrøms og nedstrøms","a6fbaaf7c71028a1a32ce6c95cb2c868":"Property based testing","153350dd3d44e2a72c8ab575116b6357":"ZeroDivisionError","ba076e25f409b30e062e3b4e57c6df3e":"- Rust har ingen klasser\n","dcb40fbf445ad3c9884a3197b94d86d3":"- s inne i calculate_length overtar IKKE eierskap"}},"user":{"id":1804764,"username":"danhje","name":null,"description":null,"thumbnail_url":"https://www.gravatar.com/avatar/7fd3ed22b55f95c7b68e8522de632951?s=140\u0026d=https%3A%2F%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","account_type":"default","team_id":null,"settings":{"id":11192306,"present_controls":true,"present_upsizing":true,"present_pointer":true,"present_notes":true,"default_deck_tag_id":null}}};
+	var SLConfig = {"current_user":{"id":1804764,"username":"danhje","name":null,"description":null,"thumbnail_url":"https://www.gravatar.com/avatar/7fd3ed22b55f95c7b68e8522de632951?s=140\u0026d=https%3A%2F%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","account_type":"default","team_id":null,"settings":{"id":11192306,"present_controls":true,"present_upsizing":true,"present_pointer":true,"present_notes":true,"default_deck_tag_id":null,"editor_grid":true,"editor_grid_on_top":false,"editor_snap":true,"editor_fixed_notes":false,"developer_mode":false,"speaker_layout":"default","speaker_theme":"dark","phone_number":null,"phone_country_code":null,"media_sources":null,"export_controls":null,"export_slide_number":null,"export_slide_notes":null,"export_separate_fragments":null,"auto_animate_tutorial_completed":true,"profile_sorting":"created","profile_layout":"grid"},"email":"daniel.hjertholm@icloud.com","notify_on_receipt":true,"billing_address":null,"billing_vat_id":null,"editor_tutorial_completed":true,"manually_upgraded":false,"deck_user_editor_limit":null,"storage_used":1441888,"storage_limit":262144000,"image_upload_limit":10485760,"video_upload_limit":104857600},"deck":{"id":2682410,"slug":"rust","title":"Rust","description":"","width":960,"height":700,"margin":0.05,"visibility":"all","published_at":"2023-09-06T15:37:35.294Z","sanitize_messages":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/0a4969eaef457f25ceceaeea6b4160ef/thumb.jpg?1694086256","view_count":0,"user":{"id":1804764,"username":"danhje","name":null,"description":null,"thumbnail_url":"https://www.gravatar.com/avatar/7fd3ed22b55f95c7b68e8522de632951?s=140\u0026d=https%3A%2F%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","account_type":"default","team_id":null,"settings":{"id":11192306,"present_controls":true,"present_upsizing":true,"present_pointer":true,"present_notes":true,"default_deck_tag_id":null}},"background_transition":"slide","transition":"slide","theme_id":null,"theme_font":"montserrat","theme_color":"grey-blue","auto_slide_interval":0,"comments_enabled":false,"forking_enabled":true,"rolling_links":false,"center":false,"shuffle":false,"should_loop":false,"share_notes":false,"slide_number":true,"slide_count":75,"rtl":false,"version":2,"collaborative":false,"deck_user_editor_limit":null,"data_updated_at":1694166422466,"font_typekit":null,"font_google":null,"time_limit":null,"navigation_mode":"default","upsizing_enabled":true,"language":"en","notes":{"79ddfde084498970c6208d01375e09b9":"Mindre kontroll over event loop. Ikke brukbart for komplekse situasjoner. F.eks. task queue i en crawler.\n\n","6dbb00d3c13dadb8789ead41ebc12806":"God blanding av norsk og engelsk\n\nTestdekning\n\nVerdikjedetesting - prosessflyt oppstrøms og nedstrøms","a6fbaaf7c71028a1a32ce6c95cb2c868":"Property based testing","153350dd3d44e2a72c8ab575116b6357":"ZeroDivisionError","ba076e25f409b30e062e3b4e57c6df3e":"- Rust har ingen klasser\n","dcb40fbf445ad3c9884a3197b94d86d3":"- s inne i calculate_length overtar IKKE eierskap"}},"user":{"id":1804764,"username":"danhje","name":null,"description":null,"thumbnail_url":"https://www.gravatar.com/avatar/7fd3ed22b55f95c7b68e8522de632951?s=140\u0026d=https%3A%2F%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","account_type":"default","team_id":null,"settings":{"id":11192306,"present_controls":true,"present_upsizing":true,"present_pointer":true,"present_notes":true,"default_deck_tag_id":null}}};
 </script>
 
 		<script>
